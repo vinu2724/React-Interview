@@ -1,0 +1,74 @@
+1.	What is React, and how does it work internally?
+-->
+What is React?
+React is a JavaScript library used for building user interfaces (UIs), especially for single-page applications (SPAs). It allows developers to create reusable UI components and efficiently update the UI with its virtual DOM mechanism.
+
+How React Works Internally?
+Component-Based Architecture
+
+Everything in React is built using components (functional or class-based).
+
+Components can be nested, reused, and managed independently.
+
+Virtual DOM (VDOM)
+
+React creates a Virtual DOM, a lightweight copy of the real DOM.
+
+Instead of updating the actual DOM directly (which is slow), React updates the VDOM first.
+
+Then, it compares the new VDOM with the previous one using a diffing algorithm.
+
+React applies only the necessary changes to the real DOM, making updates efficient.
+
+Reconciliation (Diffing Algorithm)
+
+React identifies what has changed in the VDOM.
+
+It updates only the modified parts in the real DOM (batch updates) instead of re-rendering the entire page.
+
+React Fiber Architecture (introduced in React 16)
+
+Optimized rendering engine for better UI performance.
+
+It breaks rendering work into smaller tasks, making UI updates smoother (avoids blocking the main thread).
+
+Improves concurrent rendering for animations, transitions, and large lists.
+
+State and Props Management
+
+State: Stores component-specific data that affects rendering.
+
+Props: Data passed from parent to child components to maintain consistency.
+
+React updates the UI whenever state changes.
+
+Event Handling
+
+Uses a synthetic event system for better performance and cross-browser compatibility.
+
+React does not attach events directly to elements but delegates them efficiently.
+
+React Hooks (For Functional Components)
+
+Introduced in React 16.8, allows managing state and side effects without class components.
+
+Common hooks: useState, useEffect, useRef, useReducer, etc.
+
+React Rendering Process
+
+Initial render creates the VDOM.
+
+When state or props change, React updates the VDOM.
+
+React compares the new VDOM with the previous one and updates only the necessary parts in the real DOM.
+
+Why is React Fast?
+✔ Uses Virtual DOM instead of updating the real DOM directly.
+✔ Batch updates minimize unnecessary re-renders.
+✔ Fiber Architecture improves rendering performance.
+✔ One-way data flow makes state management predictable.
+
+
+
+2.	Explain the Virtual DOM and how it improves performance.
+-->
