@@ -1,10 +1,11 @@
 import React from "react";
 import "./Home.css";
+import Card from "../Card/Card";
 
 const Home = () => {
   return (
     <>
-      <p>hello this is home page</p>
+      <Card />
     </>
   );
 };
