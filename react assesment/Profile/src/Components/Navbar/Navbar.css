@@ -1,0 +1,46 @@
+.outerNav{
+  display: flex;
+  height: 8vh;
+  /* background-color: red; */
+  width: 100vw;
+  background-color: rgb(55, 55, 61);
+  position: fixed;
+
+}
+.outerNav .Searchbar{
+  margin-top: 6px;
+  width: 25vw;
+  align-items: center;
+
+}
+
+.logo{
+  /* background-color: yellow; */
+  width: 25vw;
+  font-size: 50px;
+  color: white;
+  margin: 2px 2px;
+}
+
+.outerNav ul{
+  display: flex;
+  list-style-type:none;
+  /* background-color: red; */
+  width: 50vw;
+  font-size: 23px;
+  justify-content:space-evenly;
+  align-items: center;
+  
+  
+}
+.outerNav ul li{
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.outerNav ul li a{ 
+text-decoration: none;
+color: white;
+}
