@@ -5,6 +5,8 @@ import NumberSeq from "./Components/NumberSeq.jsx";
 import PrimeNumber from "./Components/PrimeNumber.jsx";
 import ControlledForm from "./Components/ControlledForm.jsx";
 import Todo from "./Components/Todo.jsx";
+import ProductDisplay from "./Components/ProductDisplay.jsx";
+import Accordion from "./Components/Accordian.jsx";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -25,6 +27,14 @@ const App = () => {
     { name: "suresh" },
   ];
 
+  const productList = [
+    { id: 1, name: "iphone 16", price: "$1000" },
+    { id: 2, name: "iphone 16", price: "$1000" },
+    { id: 3, name: "iphone 16", price: "$1000" },
+    { id: 4, name: "iphone 16", price: "$1000" },
+    { id: 5, name: "iphone 16", price: "$1000" },
+  ];
+
   return (
     <div className="outer">
       {/* <div className="first">
@@ -33,12 +43,15 @@ const App = () => {
         <button onClick={() => handleclick("inc")}>Increase</button>
         <button onClick={() => handleclick("dec")}>Decrease</button>
       </div>
+
       <PropPract names={nameArray} />
       <PrimeNumber num={13} />
       <NumberSeq num={[12, 23, 34, 45, 32, 435, 23, 56]} /> */}
       {/* <ControlledForm /> */}
 
-      <Todo />
+      {/* <Todo /> */}
+      {/* <ProductDisplay list={productList} /> */}
+      <Accordion />
     </div>
   );
 };
