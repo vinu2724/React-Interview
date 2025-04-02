@@ -1,7 +1,6 @@
 .body{
   background-color: rgb(80, 82, 84);
   width: 100vw;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 
@@ -10,5 +9,5 @@
   height: 8vh;
 }
 .children{
-  height: 92vh;
+  min-height: 92vh;
 }

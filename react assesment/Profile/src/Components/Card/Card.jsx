@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.css"; // Import CSS
 import Data from "../../assets/SampleData/Data";
 
-const Card = () => {
+const CardComponent = () => {
   return (
     <div className="card-container">
       {Data.map((person) => (
@@ -26,4 +26,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default CardComponent;
