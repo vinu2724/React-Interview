@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Vinayak_Khetmalis_Passport_Photo from "../../assets/Images/Vinayak_Khetmalis_Passport_Photo.jpeg";
 
 const About = () => {
   return (
@@ -27,26 +28,17 @@ const About = () => {
         <h2>Meet Our Team</h2>
         <div className="team-members">
           <div className="team-card">
-            <img
-              src="https://randomuser.me/api/portraits/men/1.jpg"
-              alt="Team Member"
-            />
+            <img src={Vinayak_Khetmalis_Passport_Photo} alt="Team Member" />
             <h3>John Doe</h3>
             <p>Founder & CEO</p>
           </div>
           <div className="team-card">
-            <img
-              src="https://randomuser.me/api/portraits/women/2.jpg"
-              alt="Team Member"
-            />
+            <img src={Vinayak_Khetmalis_Passport_Photo} alt="Team Member" />
             <h3>Jane Smith</h3>
             <p>Chief Designer</p>
           </div>
           <div className="team-card">
-            <img
-              src="https://randomuser.me/api/portraits/men/3.jpg"
-              alt="Team Member"
-            />
+            <img src={Vinayak_Khetmalis_Passport_Photo} alt="Team Member" />
             <h3>Michael Brown</h3>
             <p>Lead Developer</p>
           </div>

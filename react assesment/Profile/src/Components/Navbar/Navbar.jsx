@@ -8,7 +8,6 @@ const Navbar = () => {
       <div className="outerNav">
         <div className="logo">
           <p>Profile</p>
-          <img src=""></img>
         </div>
         <div className="Searchbar">
           <SearchBar />

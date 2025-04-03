@@ -1,7 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./SearcBar.css";
+import { SearchContext } from "../../SearchContext/SearchContext";
 const SearchBar = () => {
   const [query, setQuery] = useState("");
+  const { searchTerm, setSearchTerm } = useContext(SearchContext);
+  const handleSearch = () => {
+    setSearchTerm(query);
+    console.log(searchTerm);
+  };
 
   return (
     <div className="search-container">
@@ -12,7 +18,9 @@ const SearchBar = () => {
         onChange={(e) => setQuery(e.target.value)}
         className="search-input"
       />
-      <button className="search-button">🔍 {/* Search Icon */}</button>
+      <button className="search-button" onClick={handleSearch}>
+        🔍 {/* Search Icon */}
+      </button>
       <button className="mic-button">🎤 {/* Mic Icon */}</button>
     </div>
   );
